@@ -1,0 +1,1 @@
+let sty: string = "study";

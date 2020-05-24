@@ -1,6 +1,6 @@
-let sty: string = "study typescript now...";
-document.querySelectorAll("#app")[0].innerHTML = sty;
-
+let sty: string = "Studing the TypeScript now...";
+let app = document.querySelector("#app")
+app.innerHTML= sty;
 // 原始类型
 
 let bool: boolean = true;
@@ -60,3 +60,20 @@ x = "kjik";
 let errors = (): never => {
   throw new Error();
 };
+
+// enum
+
+enum surType {
+  kokia = 1,
+  kokis,
+  kokim,
+  kokil,
+}
+console.log(surType.kokia);
+console.log(surType[1]);
+
+enum strs {
+  succ = "you did it",
+  fail = "you miss it",
+}
+console.log(strs.succ);
